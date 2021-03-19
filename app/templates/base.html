@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title>{{ title }} - YaleFloorPlans</title>
+        <meta property="og:title" content="{{ title }} - YaleFloorPlans">
+        {% else %}
+        <title>YaleFloorPlans</title>
+        <meta property="og:title" content="YaleFloorPlans">
+        {% endif %}
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Access floor plans of your dorm at Yale.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:description" content="Access floor plans of your dorm at Yale.">
+        <meta property="og:image" content="https://mailyale.com/static/images/logo/banner.png">
+        <meta name="theme-color" content="#00356b">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/form.css">
+        <link rel="icon" href="/static/images/logo/favicon.png" type="image/png">
+        <link rel="icon" href="/static/images/logo/favicon.ico" type="image/x-icon">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="/static/images/logo.svg">
+                <h2 id="logo">YaleFloorPlans</h2>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
