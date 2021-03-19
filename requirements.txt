@@ -4,4 +4,4 @@ flask-sqlalchemy
 flask-migrate
 flask-cas
 psycopg2
-yalies>=1.1.0
+yalies>=1.2.0
